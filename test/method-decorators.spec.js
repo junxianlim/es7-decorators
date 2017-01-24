@@ -152,7 +152,7 @@ describe('@debounce', function () {
   it("only executes the function when it hasn't been called for a given time", (done) => {
     function debounce(value) {
       return function (target, key, descriptor) {
-        // YOUR IMPLEMENTATION HERE, or import lodash and use that, haha!
+        // YOUR IMPLEMENTATION HERE, or import lodash and use that (try not to)
         // Cheatsheet: https://davidwalsh.name/javascript-debounce-function
         return descriptor
       }
@@ -240,3 +240,11 @@ describe('@promisify', function () {
     });
   })
 })
+
+// and many many more that you can possibly think of
+//
+// Try looking at the following, write your own decorators and tests for them:
+// https://github.com/AvraamMavridis/javascript-decorators
+// https://github.com/jayphelps/core-decorators.js
+//
+// Study the code there and figure out why they work!
