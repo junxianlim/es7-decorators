@@ -9,3 +9,5 @@
 ## Tips
 
 1. `describe.only` runs only those tests
+
+Origina tutorial [here](https://github.com/KualaLumpurJS/decorative-decorators)
