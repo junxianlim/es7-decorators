@@ -231,13 +231,16 @@ describe('@memoize', function () {
     class Fibonacci {
       @memoize()
       static compute(n) {
-        if (n < 1) {
-          return 0;
-        }
-        if (n < 2) {
-          return 1;
-        } else {
-          return Fibonacci.compute(n - 2) + Fibonacci.compute(n - 1);
+        switch(true) {
+          case (n < 1): {
+            return 0;
+          }
+          case (n < 2): {
+            return 1;
+          }
+          default: {
+            return Fibonacci.compute(n - 2) + Fibonacci.compute(n - 1);
+          }
         }
       }
     }
